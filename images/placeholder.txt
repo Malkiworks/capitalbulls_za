@@ -2,7 +2,7 @@
 
 The following images need to be added to this directory:
 
-1. `logo.png` - The CapitalBulls_ZA logo image (approximately 200px wide)
+1. `logo.png` - The CapitalBulls  logo image (approximately 200px wide)
 2. `favicon.ico` - Site icon for browser tabs (32x32px or 64x64px)
 3. `hero-bg.jpg` - Background image for the hero section (dark, high-contrast, at least 1920x1080px)
 4. `broker-phones.jpg` - Image showing the "your broker blocked us" message on mobile phones (from Instagram)
@@ -11,7 +11,7 @@ The following images need to be added to this directory:
    - `gallery2.jpg` & `gallery5.jpg` - Educational content/quotes (category: education)
    - `gallery3.jpg` & `gallery6.jpg` - Motivational content (category: motivation)
 
-You can source these directly from the CapitalBulls_ZA Instagram account. The style should match their Instagram aesthetic:
+You can source these directly from the CapitalBulls  Instagram account. The style should match their Instagram aesthetic:
 - Dark backgrounds
 - Bold, high-contrast text
 - Modern typography
@@ -31,4 +31,4 @@ Image suggestions from Instagram:
 - "Stop treating the market like your ex. It's not personal."
 - "We are the only trading community in South Africa to trade LIVE everyday"
 
-Please ensure all images are properly licensed or you have permission to use them from CapitalBulls_ZA. 
+Please ensure all images are properly licensed or you have permission to use them from CapitalBulls . 

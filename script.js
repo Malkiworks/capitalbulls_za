@@ -182,7 +182,7 @@ function handleMissingImages() {
                 // Add a placeholder text
                 const placeholder = document.createElement('div');
                 placeholder.classList.add('img-placeholder');
-                placeholder.textContent = 'CapitalBulls_ZA';
+                placeholder.textContent = 'CapitalBulls ';
                 placeholder.style.color = '#ffd700';
                 placeholder.style.fontWeight = 'bold';
                 placeholder.style.display = 'flex';
@@ -196,7 +196,7 @@ function handleMissingImages() {
             } else if (parent.classList.contains('logo')) {
                 // Create text logo as fallback
                 const textLogo = document.createElement('h1');
-                textLogo.textContent = 'CapitalBulls_ZA';
+                textLogo.textContent = 'CapitalBulls ';
                 textLogo.style.color = '#ffd700';
                 textLogo.style.margin = '0';
                 parent.appendChild(textLogo);
@@ -213,32 +213,32 @@ function loadInstagramGallery() {
     const galleryImages = [
         {
             url: 'images/gallery1.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'results'
         },
         {
             url: 'images/gallery2.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'education'
         },
         {
             url: 'images/gallery3.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'motivation'
         },
         {
             url: 'images/gallery4.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'results'
         },
         {
             url: 'images/gallery5.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'education'
         },
         {
             url: 'images/gallery6.jpg',
-            link: 'https://www.instagram.com/capitalbulls_za/',
+            link: 'https://www.instagram.com/capitalbulls /',
             category: 'motivation'
         }
     ];
@@ -254,7 +254,7 @@ function loadInstagramGallery() {
             
             const img = document.createElement('img');
             img.src = image.url;
-            img.alt = 'CapitalBulls_ZA Trading Image';
+            img.alt = 'CapitalBulls  Trading Image';
             galleryItem.appendChild(img);
             
             const icon = document.createElement('i');
@@ -320,5 +320,5 @@ document.head.insertAdjacentHTML('beforeend', `<style>${animationStyles}</style>
 const currentYear = new Date().getFullYear();
 const copyrightElement = document.querySelector('.copyright p');
 if (copyrightElement) {
-    copyrightElement.textContent = `© ${currentYear} CapitalBulls_ZA. All rights reserved.`;
+    copyrightElement.textContent = `© ${currentYear} CapitalBulls . All rights reserved.`;
 } 

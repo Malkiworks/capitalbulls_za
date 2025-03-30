@@ -1,6 +1,6 @@
-# CapitalBulls_ZA Website
+# CapitalBulls  Website
 
-A premium website for CapitalBulls_ZA, South Africa's only LIVE trading community with 4700+ members. This website is designed to match their bold Instagram aesthetic.
+A premium website for CapitalBulls , South Africa's only LIVE trading community with 4700+ members. This website is designed to match their bold Instagram aesthetic.
 
 ## Features
 
@@ -30,7 +30,7 @@ CapitalBulls/
 
 ## Design
 
-The website follows the CapitalBulls_ZA Instagram aesthetic:
+The website follows the CapitalBulls  Instagram aesthetic:
 - Dark backgrounds with bold typography
 - High contrast colors
 - Gold accents for important elements
@@ -70,7 +70,7 @@ The website follows the CapitalBulls_ZA Instagram aesthetic:
 
 The website requires the following images in the `images/` directory:
 
-1. **logo.png**: The CapitalBulls_ZA logo (approximately 200px wide)
+1. **logo.png**: The CapitalBulls  logo (approximately 200px wide)
 2. **favicon.ico**: Site icon for browser tabs (32x32px or 64x64px)
 3. **hero-bg.jpg**: A high-resolution background image with dark overlay (at least 1920x1080px)
 4. **broker-phones.jpg**: Image showing the "your broker blocked us" message on phones
@@ -81,8 +81,8 @@ The website requires the following images in the `images/` directory:
 
 ### Sourcing Images from Instagram
 
-To save images from CapitalBulls_ZA's Instagram:
-1. Navigate to the [CapitalBulls_ZA Instagram profile](https://www.instagram.com/capitalbulls_za/)
+To save images from CapitalBulls 's Instagram:
+1. Navigate to the [CapitalBulls  Instagram profile](https://www.instagram.com/capitalbulls /)
 2. Find images that match the needed categories (results, education, motivation)
 3. Right-click on desired images and select "Save image as..."
 4. Save them to the `images/` directory with the appropriate filenames
@@ -137,7 +137,7 @@ Modify the Instagram gallery categories and images in script.js:
 const galleryImages = [
     {
         url: 'images/gallery1.jpg',
-        link: 'https://www.instagram.com/capitalbulls_za/',
+        link: 'https://www.instagram.com/capitalbulls /',
         category: 'results'
     },
     // Other gallery images
@@ -146,8 +146,8 @@ const galleryImages = [
 
 ## License
 
-All rights reserved. This site is proprietary to CapitalBulls_ZA.
+All rights reserved. This site is proprietary to CapitalBulls .
 
 ## Disclaimer
 
-Trading CFDs is highly risky and requires skill. Past performance is not indicative of future results. You trade at your own risk. CapitalBulls_ZA is not a financial advisor, and all information provided is for educational purposes only. 
+Trading CFDs is highly risky and requires skill. Past performance is not indicative of future results. You trade at your own risk. CapitalBulls  is not a financial advisor, and all information provided is for educational purposes only. 
