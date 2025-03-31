@@ -82,7 +82,7 @@ The website requires the following images in the `images/` directory:
 ### Sourcing Images from Instagram
 
 To save images from CapitalBulls 's Instagram:
-1. Navigate to the [CapitalBulls  Instagram profile](https://www.instagram.com/capitalbulls /)
+1. Navigate to the [CapitalBulls  Instagram profile](https://www.instagram.com/capitalbulls_za/)
 2. Find images that match the needed categories (results, education, motivation)
 3. Right-click on desired images and select "Save image as..."
 4. Save them to the `images/` directory with the appropriate filenames
@@ -137,7 +137,7 @@ Modify the Instagram gallery categories and images in script.js:
 const galleryImages = [
     {
         url: 'images/gallery1.jpg',
-        link: 'https://www.instagram.com/capitalbulls /',
+        link: 'https://www.instagram.com/capitalbulls_za/',
         category: 'results'
     },
     // Other gallery images

@@ -213,12 +213,12 @@ function loadInstagramGallery() {
     const galleryImages = [
         {
             url: 'images/gallery1.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
+            link: 'https://www.instagram.com/capitalbulls_za/',
             category: 'results'
         },
         {
             url: 'images/gallery2.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
+            link: 'https://www.instagram.com/capitalbulls_za/',
             category: 'education'
         },
         {
