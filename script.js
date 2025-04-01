@@ -212,34 +212,59 @@ function loadInstagramGallery() {
     // Sample images - in a real implementation, this would come from Instagram API
     const galleryImages = [
         {
-            url: 'images/gallery1.jpg',
+            url: 'images/result1.jpg',
             link: 'https://www.instagram.com/capitalbulls_za/',
             category: 'results'
         },
         {
-            url: 'images/gallery2.jpg',
+            url: 'images/result2.jpg',
             link: 'https://www.instagram.com/capitalbulls_za/',
-            category: 'education'
-        },
-        {
-            url: 'images/gallery3.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
-            category: 'motivation'
-        },
-        {
-            url: 'images/gallery4.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
             category: 'results'
         },
         {
-            url: 'images/gallery5.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
-            category: 'education'
+            url: 'images/result3.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'results'
         },
         {
-            url: 'images/gallery6.jpg',
-            link: 'https://www.instagram.com/capitalbulls /',
-            category: 'motivation'
+            url: 'images/test1.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'testimonials'
+        },
+        {
+            url: 'images/test2.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'testimonials'
+        },
+        {
+            url: 'images/test3.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'testimonials'
+        },
+        {
+            url: 'images/test4.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'testimonials'
+        },
+        {
+            url: 'images/test5.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'testimonials'
+        },
+        {
+            url: 'images/other1.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'other'
+        },
+        {
+            url: 'images/other2.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'other'
+        },
+        {
+            url: 'images/other3.jpg',
+            link: 'https://www.instagram.com/capitalbulls_za/',
+            category: 'other'
         }
     ];
     

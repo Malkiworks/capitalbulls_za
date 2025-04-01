@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CapitalBulls</title>
+    <meta name="description" content="Get in touch with CapitalBulls - join our Discord and WhatsApp groups for support and community interaction.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .contact-section {
+            padding: 120px 0 80px;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-header {
+            margin-bottom: 60px;
+        }
+        .contact-header h1 {
+            margin-bottom: 15px;
+        }
+        .contact-header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .contact-card {
+            background: #131313;
+            border-radius: 10px;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fcb330;
+            display: inline-block;
+        }
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .contact-card p {
+            margin-bottom: 25px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            background: #fcb330;
+            color: #111;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        .contact-btn i {
+            margin-right: 8px;
+        }
+        .hours-box {
+            background: rgba(252, 179, 48, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto 60px;
+            border-left: 3px solid #fcb330;
+        }
+        .hours-box h3 {
+            color: #fcb330;
+            margin-bottom: 15px;
+        }
+        .hours-box p {
+            line-height: 1.6;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #fcb330;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="CapitalBulls Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#features">Why Us</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#gallery">Insights</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#links" class="nav-cta">Join Now</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-header">
+                <h1>Connect With Us</h1>
+                <p>Join our trading community and get support through these channels</p>
+            </div>
+            
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fab fa-discord contact-icon"></i>
+                    <h3>Discord Community</h3>
+                    <p>Join over 4700+ traders in our active Discord community. Get access to LIVE trading sessions, educational content, and connect with like-minded traders.</p>
+                    <a href="https://discord.com/invite/KqyjCFGMwV" class="contact-btn">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp contact-icon"></i>
+                    <h3>WhatsApp Support</h3>
+                    <p>Need quick support or have questions about our services? Reach out to us on WhatsApp for fast and personalized assistance.</p>
+                    <a href="https://api.whatsapp.com/message/CHY4WFEJJQMXC1?autoload=1&app_absent=0" class="contact-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Message Us
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hours-box">
+                <h3>Trading Session Hours</h3>
+                <p>We host LIVE trading sessions during the late afternoon US session, typically around:<br>
+                19:15 / 19:45 / 20:45 South African time</p>
+                <p>Join us to see professional traders in action and learn as you watch.</p>
+            </div>
+            
+            <div>
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CapitalBulls Logo">
+                </div>
+                <div class="footer-social">
+                    <a href="https://discord.com/invite/KqyjCFGMwV" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/capitalbulls_za" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@capitalbulls" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://api.whatsapp.com/message/CHY4WFEJJQMXC1?autoload=1&app_absent=0" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#features">Why Us</a></li>
+                        <li><a href="index.html#community">Community</a></li>
+                        <li><a href="index.html#gallery">Insights</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="https://discord.com/invite/KqyjCFGMwV">Discord Help</a></li>
+                        <li><a href="https://api.whatsapp.com/message/CHY4WFEJJQMXC1?autoload=1&app_absent=0">WhatsApp Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 CapitalBulls. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
