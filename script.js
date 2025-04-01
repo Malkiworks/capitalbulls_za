@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initGalleryFilters();
     initTestimonialSlider();
+    init3DCardEffect();
     
     // Handle missing images
     handleMissingImages();
@@ -289,6 +290,58 @@ function loadInstagramGallery() {
             galleryGrid.appendChild(galleryItem);
         });
     }
+}
+
+// Function to initialize 3D card effect with mouse tracking
+function init3DCardEffect() {
+    const cards = document.querySelectorAll('.card-3d');
+    
+    cards.forEach(card => {
+        card.classList.add('mouse-interactive');
+        
+        card.addEventListener('mousemove', function(e) {
+            // Get position of mouse relative to card
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left; // x position within the card
+            const y = e.clientY - rect.top; // y position within the card
+            
+            // Calculate rotation values based on mouse position
+            // Further from center = more rotation
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateY = ((x - centerX) / centerX) * 5; // max 5 deg rotation
+            const rotateX = ((centerY - y) / centerY) * 5; // reverse Y axis for correct effect
+            
+            // Apply transform
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+            
+            // Add subtle shadow effect
+            const shadowX = (x - centerX) / 20;
+            const shadowY = (y - centerY) / 20;
+            this.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0, 0, 0, 0.4)`;
+            
+            // Add subtle highlight effect
+            const percentX = (x / rect.width) * 100;
+            const percentY = (y / rect.height) * 100;
+            
+            // Create or update a custom property for shine gradient position
+            this.style.setProperty('--shine-x', `${percentX}%`);
+            this.style.setProperty('--shine-y', `${percentY}%`);
+            this.style.setProperty('--shine-opacity', '1');
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            // Reset to default style on mouse leave
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            this.style.boxShadow = '';
+            this.style.setProperty('--shine-opacity', '0');
+        });
+        
+        // Create a shine element for each card
+        const shine = document.createElement('div');
+        shine.classList.add('card-shine');
+        card.appendChild(shine);
+    });
 }
 
 // Add animation styles

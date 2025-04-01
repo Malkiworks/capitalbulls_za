@@ -19,12 +19,15 @@
             padding: 120px 0 80px;
         }
         .policy-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         .policy-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+        }
+        .policy-header h1 {
+            margin-bottom: 15px;
         }
         .policy-content {
             background: #131313;
@@ -34,9 +37,13 @@
         }
         .policy-content h2 {
             color: #fcb330;
+            font-size: 1.5rem;
             margin-top: 40px;
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            text-align: left;
+        }
+        .policy-content h2:after {
+            display: none;
         }
         .policy-content h2:first-child {
             margin-top: 0;
@@ -46,10 +53,42 @@
             line-height: 1.7;
         }
         .policy-content ul {
-            padding-left: 20px;
+            margin-left: 25px;
         }
         .policy-content ul li {
             margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .highlight-box.card-3d {
+            padding: 0;
+            background: none;
+            border-left: none;
+        }
+        .highlight-box .card-3d-content {
+            padding: 20px;
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            border-radius: 5px;
+        }
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .highlight-box.card-3d:hover {
+            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+        }
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            text-align: right;
+            margin-top: 40px;
         }
         .back-link {
             display: inline-block;
@@ -60,19 +99,6 @@
         }
         .back-link:hover {
             text-decoration: underline;
-        }
-        .last-updated {
-            font-style: italic;
-            color: #999;
-            margin-top: 40px;
-            text-align: center;
-        }
-        .highlight-box {
-            background: rgba(252, 179, 48, 0.1);
-            border-left: 3px solid #fcb330;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -118,8 +144,10 @@
                     <li>Trading analysis and insights</li>
                 </ul>
                 
-                <div class="highlight-box">
-                    <p><strong>Important:</strong> All content and services provided by CapitalBulls are for educational purposes only. We do not provide financial advice, and trading decisions made by users are at their own risk and discretion.</p>
+                <div class="highlight-box card-3d">
+                    <div class="card-3d-content">
+                        <p><strong>Important:</strong> All content and services provided by CapitalBulls are for educational purposes only. We do not provide financial advice, and trading decisions made by users are at their own risk and discretion.</p>
+                    </div>
                 </div>
                 
                 <h2>Membership and Access</h2>
@@ -168,8 +196,10 @@
                     <li>You should never invest money that you cannot afford to lose</li>
                 </ul>
                 
-                <div class="highlight-box">
-                    <p><strong>Financial Warning:</strong> Trading CFDs is high risk and requires skill. When trading in our live streams, you do so at your own risk. CapitalBulls does not provide financial advice. All information provided is for educational purposes only.</p>
+                <div class="highlight-box card-3d">
+                    <div class="card-3d-content">
+                        <p><strong>Financial Warning:</strong> Trading CFDs is high risk and requires skill. When trading in our live streams, you do so at your own risk. CapitalBulls does not provide financial advice. All information provided is for educational purposes only.</p>
+                    </div>
                 </div>
                 
                 <h2>Limitation of Liability</h2>

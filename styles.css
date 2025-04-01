@@ -22,6 +22,7 @@
     --border-radius-lg: 16px;
     --transition: all 0.3s ease;
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    --card-3d-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -377,16 +378,24 @@ nav ul li a:focus:after {
 
 .feature-card {
     background-color: var(--dark-card);
-    border-radius: var(--border-radius);
     padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    height: 100%;
+}
+
+.feature-card.card-3d {
+    padding: 0;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--box-shadow);
-    border-color: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card.card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
 }
 
 .feature-icon {
@@ -622,10 +631,17 @@ nav ul li a:focus:after {
     background-color: var(--dark-card);
     border-radius: var(--border-radius);
     padding: var(--spacing-xl);
-    transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.card-3d {
+    padding: 0;
 }
 
 .pricing-card.featured {
@@ -791,30 +807,56 @@ nav ul li a:focus:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: var(--spacing-xl) var(--spacing-lg);
+    justify-content: center;
+    padding: var(--spacing-lg);
     background-color: var(--dark-card);
     border-radius: var(--border-radius);
     transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--box-shadow);
+}
+
+.link-card.card-3d {
+    padding: 0;
 }
 
 .link-card i {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-md);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
     color: var(--gold);
 }
 
 .link-card span {
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .link-card:hover {
-    background-color: var(--gold-transparent);
-    transform: translateY(-10px);
-    box-shadow: var(--box-shadow);
-    border-color: var(--gold);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.link-card.card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+
+.card-3d-content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.link-card .card-3d-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card .card-3d-content {
+    padding: var(--spacing-xl);
 }
 
 /* CTA Section */
@@ -1100,4 +1142,105 @@ footer {
     .footer-nav ul li a:hover {
         padding-left: 0;
     }
+}
+
+/* 3D Card Effect */
+.card-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    perspective: 1000px;
+    background-color: var(--dark-card);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: var(--card-3d-shadow);
+    border-color: rgba(255, 215, 0, 0.2);
+}
+
+.card-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 215, 0, 0.05) 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card-3d:hover::before {
+    opacity: 1;
+}
+
+.card-3d::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    z-index: 2;
+    transform: translateY(-3px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card-3d:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-3d-content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.card-3d:hover .card-3d-content {
+    transform: translateZ(30px);
+}
+
+/* Card shine effect */
+.card-3d {
+    --shine-x: 50%;
+    --shine-y: 50%;
+    --shine-opacity: 0;
+}
+
+.card-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: radial-gradient(
+        circle at var(--shine-x) var(--shine-y), 
+        rgba(255, 215, 0, 0.15) 0%, 
+        rgba(255, 215, 0, 0) 50%
+    );
+    opacity: var(--shine-opacity);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Custom mouse interaction for 3D cards */
+.card-3d.mouse-interactive {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 } 

@@ -19,12 +19,15 @@
             padding: 120px 0 80px;
         }
         .policy-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         .policy-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+        }
+        .policy-header h1 {
+            margin-bottom: 15px;
         }
         .policy-content {
             background: #131313;
@@ -34,9 +37,13 @@
         }
         .policy-content h2 {
             color: #fcb330;
+            font-size: 1.5rem;
             margin-top: 40px;
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            text-align: left;
+        }
+        .policy-content h2:after {
+            display: none;
         }
         .policy-content h2:first-child {
             margin-top: 0;
@@ -46,10 +53,42 @@
             line-height: 1.7;
         }
         .policy-content ul {
-            padding-left: 20px;
+            margin-left: 25px;
         }
         .policy-content ul li {
             margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .highlight-box.card-3d {
+            padding: 0;
+            background: none;
+            border-left: none;
+        }
+        .highlight-box .card-3d-content {
+            padding: 20px;
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            border-radius: 5px;
+        }
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .highlight-box.card-3d:hover {
+            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+        }
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            text-align: right;
+            margin-top: 40px;
         }
         .back-link {
             display: inline-block;
@@ -60,12 +99,6 @@
         }
         .back-link:hover {
             text-decoration: underline;
-        }
-        .last-updated {
-            font-style: italic;
-            color: #999;
-            margin-top: 40px;
-            text-align: center;
         }
     </style>
 </head>
@@ -137,6 +170,12 @@
                 
                 <h2>Security of Your Information</h2>
                 <p>We use administrative, technical, and physical security measures to protect your personal information. While we have taken reasonable steps to secure the information you provide to us, please be aware that no security measures are perfect, and we cannot guarantee the security of your information.</p>
+                
+                <div class="highlight-box card-3d">
+                    <div class="card-3d-content">
+                        <p><strong>Important:</strong> We take the security of your data very seriously. However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+                    </div>
+                </div>
                 
                 <h2>Third-Party Websites</h2>
                 <p>Our website and Discord community may contain links to third-party websites and applications. We are not responsible for the privacy practices or the content of these third-party sites, and any information you provide to them is not covered by this Privacy Policy.</p>

@@ -48,9 +48,23 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        
+        .contact-card.card-3d {
+            padding: 0;
+            background: none;
+        }
+        
+        .contact-card .card-3d-content {
+            padding: 40px;
+        }
+        
         .contact-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .contact-card.card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
         }
         .contact-icon {
             font-size: 3rem;
@@ -93,6 +107,29 @@
             max-width: 500px;
             margin: 0 auto 60px;
             border-left: 3px solid #fcb330;
+            transition: all 0.3s ease;
+        }
+        
+        .hours-box.card-3d {
+            padding: 0;
+            background: none;
+            border-left: none;
+        }
+        
+        .hours-box .card-3d-content {
+            padding: 30px;
+            background: rgba(252, 179, 48, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid #fcb330;
+        }
+        
+        .hours-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .hours-box.card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
         }
         .hours-box h3 {
             color: #fcb330;
@@ -154,32 +191,38 @@
             </div>
             
             <div class="contact-methods">
-                <div class="contact-card">
-                    <i class="fab fa-discord contact-icon"></i>
-                    <h3>Discord Community</h3>
-                    <p>Join over 4700+ traders in our active Discord community. Get access to LIVE trading sessions, educational content, and connect with like-minded traders.</p>
-                    <a href="https://discord.com/invite/KqyjCFGMwV" class="contact-btn">
-                        <i class="fab fa-discord"></i>
-                        Join Discord
-                    </a>
+                <div class="contact-card card-3d">
+                    <div class="card-3d-content">
+                        <i class="fab fa-discord contact-icon"></i>
+                        <h3>Discord Community</h3>
+                        <p>Join over 4700+ traders in our active Discord community. Get access to LIVE trading sessions, educational content, and connect with like-minded traders.</p>
+                        <a href="https://discord.com/invite/KqyjCFGMwV" class="contact-btn">
+                            <i class="fab fa-discord"></i>
+                            Join Discord
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="contact-card">
-                    <i class="fab fa-whatsapp contact-icon"></i>
-                    <h3>WhatsApp Support</h3>
-                    <p>Need quick support or have questions about our services? Reach out to us on WhatsApp for fast and personalized assistance.</p>
-                    <a href="https://api.whatsapp.com/message/CHY4WFEJJQMXC1?autoload=1&app_absent=0" class="contact-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        Message Us
-                    </a>
+                <div class="contact-card card-3d">
+                    <div class="card-3d-content">
+                        <i class="fab fa-whatsapp contact-icon"></i>
+                        <h3>WhatsApp Support</h3>
+                        <p>Need quick support or have questions about our services? Reach out to us on WhatsApp for fast and personalized assistance.</p>
+                        <a href="https://api.whatsapp.com/message/CHY4WFEJJQMXC1?autoload=1&app_absent=0" class="contact-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            Message Us
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="hours-box">
-                <h3>Trading Session Hours</h3>
-                <p>We host LIVE trading sessions during the late afternoon US session, typically around:<br>
-                19:15 / 19:45 / 20:45 South African time</p>
-                <p>Join us to see professional traders in action and learn as you watch.</p>
+            <div class="hours-box card-3d">
+                <div class="card-3d-content">
+                    <h3>Trading Session Hours</h3>
+                    <p>We host LIVE trading sessions during the late afternoon US session, typically around:<br>
+                    19:15 / 19:45 / 20:45 South African time</p>
+                    <p>Join us to see professional traders in action and learn as you watch.</p>
+                </div>
             </div>
             
             <div>

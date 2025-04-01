@@ -19,12 +19,15 @@
             padding: 120px 0 80px;
         }
         .policy-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         .policy-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+        }
+        .policy-header h1 {
+            margin-bottom: 15px;
         }
         .policy-content {
             background: #131313;
@@ -34,9 +37,13 @@
         }
         .policy-content h2 {
             color: #fcb330;
+            font-size: 1.5rem;
             margin-top: 40px;
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            text-align: left;
+        }
+        .policy-content h2:after {
+            display: none;
         }
         .policy-content h2:first-child {
             margin-top: 0;
@@ -46,10 +53,42 @@
             line-height: 1.7;
         }
         .policy-content ul {
-            padding-left: 20px;
+            margin-left: 25px;
         }
         .policy-content ul li {
             margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .highlight-box.card-3d {
+            padding: 0;
+            background: none;
+            border-left: none;
+        }
+        .highlight-box .card-3d-content {
+            padding: 20px;
+            background-color: rgba(252, 179, 48, 0.1);
+            border-left: 3px solid #fcb330;
+            border-radius: 5px;
+        }
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .highlight-box.card-3d:hover {
+            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+        }
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            text-align: right;
+            margin-top: 40px;
         }
         .back-link {
             display: inline-block;
@@ -60,19 +99,6 @@
         }
         .back-link:hover {
             text-decoration: underline;
-        }
-        .last-updated {
-            font-style: italic;
-            color: #999;
-            margin-top: 40px;
-            text-align: center;
-        }
-        .highlight-box {
-            background: rgba(252, 179, 48, 0.1);
-            border-left: 3px solid #fcb330;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -169,6 +195,17 @@
                 
                 <h2>Contact Us</h2>
                 <p>If you have any questions about our refund policy, please contact us through our WhatsApp support.</p>
+                
+                <div class="highlight-box card-3d">
+                    <div class="card-3d-content">
+                        <p><strong>Note:</strong> All refund requests must be submitted within the specified timeframes. We cannot process refund requests that fall outside these periods.</p>
+                    </div>
+                </div>
+                <div class="highlight-box card-3d">
+                    <div class="card-3d-content">
+                        <p><strong>Important:</strong> By purchasing our services, you acknowledge that you have read, understood, and agree to this Refund Policy. If you have any questions, please contact our support team before making a purchase.</p>
+                    </div>
+                </div>
                 
                 <p class="last-updated">Last Updated: June 2024</p>
             </div>
